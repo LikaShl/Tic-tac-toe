@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">tic tac toe</h1>
+      <div class="wrap">
+        <table class="field" id="field">
+          <tr>
+            <td
+              class="cell b-right b-bottom"
+              id="cell1"
+              onclick="nextMove(this)"
+            ></td>
+            <td
+              class="cell b-right b-bottom"
+              id="cell2"
+              onclick="nextMove(this)"
+            ></td>
+            <td class="cell b-bottom" id="call3" onclick="nextMove(this)"></td>
+          </tr>
+          <tr>
+            <td
+              class="cell b-right b-bottom"
+              id="cell4"
+              onclick="nextMove(this)"
+            ></td>
+            <td
+              class="cell b-right b-bottom"
+              id="cell5"
+              onclick="nextMove(this)"
+            ></td>
+            <td class="cell b-bottom" id="cell6" onclick="nextMove(this)"></td>
+          </tr>
+          <tr>
+            <td class="cell b-right" id="cell7" onclick="nextMove(this)"></td>
+            <td class="cell b-right" id="cell8" onclick="nextMove(this)"></td>
+            <td class="cell" id="cell9" onclick="nextMove(this)"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
