@@ -15,6 +15,7 @@ body {
 .title {
   text-transform: uppercase;
   text-align: center;
+  color: red;
 }
 .wrap {
   position: relative;
