@@ -1,24 +1,16 @@
 let move = 0;
-let field = document.getElementById("field");
-field.addEventListener("click", clickCounter);
 let cell = document.getElementsByClassName("cell");
-
-function clickCounter() {
-  move += 1;
-  console.log(move);
-}
 
 function nextMove(cell) {
   if (cell.classList.contains("cross") || cell.classList.contains("null")) {
-    alert("Choose another cell");
-    move -= 1;
+    return;
   } else if (move % 2 == 0) {
     cell.classList.add("cross");
   } else if (move % 2 != 0) {
     cell.classList.add("null");
-  } else {
-    whoWin();
   }
+  move += 1;
+  whoWin();
 }
 
 function whoWin() {
@@ -61,7 +53,7 @@ function whoWin() {
   ) {
     crossWin.style.display = "flex";
   } else if (
-    (cell1.classList.contains("cross") &&
+    (cell1.classList.contains("null") &&
       cell2.classList.contains("null") &&
       cell3.classList.contains("null")) ||
     (cell4.classList.contains("null") &&
