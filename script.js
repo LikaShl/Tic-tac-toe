@@ -1,3 +1,5 @@
+"use strict";
+
 let move = 0;
 let cell = document.getElementsByClassName("cell");
 
