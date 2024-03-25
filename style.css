@@ -6,7 +6,7 @@ body {
 }
 .container {
   width: 60%;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 .wrap {
   margin: 30px auto;
@@ -16,6 +16,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: red;
+  font-size: 82px;
+  margin: 10px auto;
 }
 .wrap {
   position: relative;
@@ -67,5 +69,8 @@ body {
 @media (max-width: 600px) {
   .container {
     width: 90%;
+  }
+  .title {
+    font-size: 36px;
   }
 }
