@@ -10,6 +10,14 @@
     <div class="container">
       <h1 class="title">tic tac toe</h1>
       <div class="wrap">
+        <div class="cross-win" id="cross-win">
+          <img class="win-img" src="./img/red-cross.png" alt="cross" />
+          <h2 class="win-title">win</h2>
+        </div>
+        <div class="null-win" id="null-win">
+          <img class="win-img" src="./img/krasnyi-krug.png" alt="null" />
+          <h2 class="win-title">win</h2>
+        </div>
         <table class="field" id="field">
           <tr>
             <td
@@ -22,7 +30,7 @@
               id="cell2"
               onclick="nextMove(this)"
             ></td>
-            <td class="cell b-bottom" id="call3" onclick="nextMove(this)"></td>
+            <td class="cell b-bottom" id="cell3" onclick="nextMove(this)"></td>
           </tr>
           <tr>
             <td

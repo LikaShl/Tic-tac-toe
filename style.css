@@ -13,8 +13,29 @@ body {
   width: 80%;
 }
 .title {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
+}
+.wrap {
+  position: relative;
+}
+.cross-win,
+.null-win {
+  width: 60%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: none;
+  flex-direction: column;
+}
+.win-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 64px;
+  color: red;
+}
+.win-img {
+  width: 100%;
 }
 .field {
   width: 90%;
